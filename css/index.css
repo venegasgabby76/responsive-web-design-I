@@ -1,3 +1,245 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.great-idea{
+	width: 800px;
+     margin: 0 auto;
+	
+}
+
+.top-nav{
+	display: flex;
+	justify-content: space-around;
+    word-spacing: 25px;
+
+}
+
+.logo{
+	width: auto;
+	height: 8%
+}
+
+button {
+margin: 95px;
+font-size: 15px;
+text-align: center;
+border: 2px solid black;
+}
+
+#header-one{
+	display: flex; 
+	flex-wrap: wrap; 
+	font-size: 60px;
+}
+
+
+
+.main-heading{
+	display: flex; 
+	justify-content: space-around;
+
+}
+
+.header-img {
+    padding-top: 55px;
+}
+
+.main-img {
+	display: flex;
+	width: 50px;
+	align-content: flex-end;
+    padding-left: 25px;
+	}
+
+
+.top-content {
+	width: 900px;
+    border-top: 1px solid black ;
+	margin-top: 20px;
+	display: flex;
+	padding-bottom: 3%;
+}
+
+.top-bar {
+	initial-letter: 40px;
+	margin: 20px;
+	color: lightgray;
+	}
+
+	.bottom-content {
+		margin-top: 20px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid black;
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+	.bottom-left{
+		padding: 0 15px;
+		margin: 0 0;
+	}
+
+	.bottom-center{
+	}
+
+	.bottom-right{
+		align-content: left;
+		margin: 0 25px;
+	}
+
+	address  {
+        margin: 20px;
+    
+		
+	}
+    
+
+	footer p {
+		margin: 30px ;
+		text-align: center;
+	}	
+
+
+
+
+
+
+
+    @media (max-width: 800px){
+
+        #great-idea{
+            width: auto;
+        }
+
+        .top-nav{
+            padding-left: 15px;
+            word-spacing: 75px;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+
+        .logo{
+            width: 30%;
+            align-self: center;
+            padding: 15px;
+        }
+
+        #header-one{
+            flex-direction: column;
+            align-content: center;
+            height: auto;
+            text-align: center;
+        }
+
+        .header-img {
+            display: none;
+            visibility: hidden;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+             margin: auto;
+             background-color: white;
+        }
+
+
+
+        .top-left{
+            margin: 10px 10px; 
+            word-wrap: break-word;
+            text-align: justify;
+        }
+
+        .top-right { 
+            margin: 10px 10px; 
+            text-align: justify;
+        }
+
+
+        .top-content {
+            height: auto;
+            width: auto;
+        }
+
+        .middle-img {
+            display: flex;
+            justify-content: center;
+            width: 790px;
+            padding: 15px;
+        
+          }
+
+
+
+    }
 
