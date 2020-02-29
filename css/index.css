@@ -149,7 +149,8 @@ border: 2px solid black;
 	}
 
 	.bottom-center{
-	}
+        
+    }
 
 	.bottom-right{
 		align-content: left;
@@ -242,4 +243,113 @@ border: 2px solid black;
 
 
     }
+
+
+    @media (max-width: 500px) {
+
+        #great-idea{
+            width: 500px;
+    
+        }
+
+
+        .top-nav{
+            flex-direction: column-reverse;
+        
+        }
+
+        
+        * {
+            flex-direction: column;
+            align-content: center;
+        }        
+    
+        .mobile-only{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+            border-bottom: 1px solid grey;
+            width: auto;
+            
+        }
+
+
+
+
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo{
+            width: 30%;
+            align-self: center;
+            padding: 15px;
+        }
+
+        #header-one{
+            flex-direction: column;
+            align-content: center;
+            height: auto;
+            text-align: center;
+        }
+
+        .header-img {
+            display: none;
+            visibility: hidden;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+             margin: auto;
+             background-color: white;
+        }
+
+        .top-content { 
+            flex-wrap: wrap;
+            font-size: 25px;
+        }
+
+        .top-left{
+            padding: 15px 15px;
+        }
+
+        .top-right{ 
+            padding: 15px 15px;
+        }
+
+
+        .bottom-content{
+            flex-direction: column;
+            font-size: 25px;
+        }
+
+        .bottom-left{
+            padding: 45px 25px;
+        }
+
+        .bottom-center{
+            padding: 45px 25px;
+        }
+
+
+        .bottom-right{
+            padding: 45px 0;
+        }
+
+
+        address{
+            font-size: 25px
+        }
+
+        footer{
+            font-size: 25px;
+        }
+    }
+
 
